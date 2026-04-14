@@ -17,3 +17,11 @@ If asked, you can explain how you used Ollama and Open WebUI to build a Safety-C
 to prevent hallucinations in industrial project logs.
 
 Logic Contradiction
+
+Deterministic Guardrails: You replaced conversational guesswork with strict logic gates.
+
+Symbolic Grounding: You used XML tags to ensure the AI's "brain" only processes the "data" provided.
+
+Ambiguity Resolution: You engineered a trigger that forces the model to stop when it encounters pronouns without clear targets.
+
+Instructional Bleed Mitigation: You identified and fought the model's tendency to confuse its "rules" with the "reality" of the user's input.
