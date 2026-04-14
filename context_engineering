@@ -8,3 +8,4 @@ Negative Constraint: An instruction that tells the AI what it is NOT allowed to 
 Disambiguation: The process of resolving multiple possible meanings for a single word or phrase.
 
 Reference Resolution: The technical name for the AI figuring out what a word like "it" refers to in the previous text.
+Instructional Bleed—where the model gets so focused on its rules that it starts seeing them in the data even when they aren't there.
