@@ -2,19 +2,26 @@
 
 Technical Term,"Meaningful Layman Info (The ""Brain Map"" Analogy)",Real-World Example from our Session
 System Prompting,"The ""Employee Handbook"": Setting the permanent rules, personality, and boundaries before the work starts.","Telling the AI: ""You are a Safety Auditor. Never ignore a leak."""
+
+
 In-Context Learning (ICL),"The ""Open Book Test"": Giving the AI the information it needs right in the chat so it doesn't have to rely on its ""memory.""","Pasting your project rules into the conversation so the AI knows what a ""union"" is."
+
 Grounding,"The ""Fact Anchor"": Forcing the AI to stay tethered to the truth and not ""drift"" into imagination.",Making the AI prove a violation exists by quoting the user's text.
+
 Instructional Bleed,"""Rule Confusion"": When the AI gets so obsessed with its instructions that it thinks they are happening in real life.","The AI flagging a ""Lethal"" hazard just because the word ""wiring"" was in the instructions."
+
 Entity-Attribute Mapping,"""Organizing the Folders"": Correcting a detail so it lands in the right file (e.g., putting a plumbing fix in the Plumbing folder).","Ensuring the ""Coupling"" mistake is tied to Irrigation, not the ESP32 project."
+
 Disambiguation,"The ""Wait, Which One?"" Trigger: Stopping the AI from guessing when a person is being vague.","The AI asking, ""Does 'it' refer to Project A or Project B?"" instead of just picking one."
+
 XML Sandboxing,"""The Protective Bubble"": Using tags like <update> to tell the AI, ""Only look inside this box for facts.""",Wrapping your status in <user_update> tags so the AI doesn't read the rest of the chat.
+
 Negative Constraints,"The ""Electric Fence"": Explicitly telling the AI what it is FORBIDDEN from doing.","""You are FORBIDDEN from assuming which project 'it' refers to."""
+
 Deterministic Output,"""The Robot Response"": Ensuring the AI always gives you a structured format (like JSON) instead of a chatty one.","Forcing the AI to output: STATUS: VIOLATION instead of ""Hey, I think you made a mistake..."""
+
 Attention Dilution,"""Missing the Forest for the Trees"": When the AI is so focused on one big error that it ignores the other small ones.","The AI catching the ""Coupling"" but missing the ""Lights on"" hazard in the same paragraph."
 
-
-Disambiguation 
-Defaulting to Recency
 Ambiguity Trigger: An instruction that tells the AI to stop processing if the data is unclear.
 
 Negative Constraint: An instruction that tells the AI what it is NOT allowed to do (e.g., "Do not assume").
@@ -45,3 +52,11 @@ You have successfully implemented a Multi-Layered Context Firewall. Here is the 
 2: Anchor QuotesDeterministic GroundingForces the AI to prove every claim with a literal string from the input.Layer 
 3: Ambiguity TriggerReference ResolutionStops the AI from guessing when you use vague pronouns like "it."Layer 
 4: Forbidden RulesNegative ConstraintsOverrides the AI's "politeness" so it doesn't invent safety violations just to be useful.
+
+
+Zero-Shot: You give a command with no examples. (High risk of hallucination).
+
+Few-Shot (ICL): You give 2–5 examples. (High accuracy, consistent format).
+
+
+
