@@ -1,3 +1,10 @@
 
 Disambiguation 
 Defaulting to Recency
+Ambiguity Trigger: An instruction that tells the AI to stop processing if the data is unclear.
+
+Negative Constraint: An instruction that tells the AI what it is NOT allowed to do (e.g., "Do not assume").
+
+Disambiguation: The process of resolving multiple possible meanings for a single word or phrase.
+
+Reference Resolution: The technical name for the AI figuring out what a word like "it" refers to in the previous text.
